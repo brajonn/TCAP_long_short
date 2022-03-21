@@ -2,6 +2,11 @@ import os, json, requests, time
 from dotenv import load_dotenv
 from web3 import Web3
 
+def printTime():
+	t = time.localtime()
+	current_time = time.strftime("%D %H:%M:%S", t)
+	print(current_time)
+    
 def long():
     #load up environment variable and connect to web3 mainnet
     load_dotenv()
