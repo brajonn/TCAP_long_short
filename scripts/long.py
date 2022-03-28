@@ -21,8 +21,8 @@ def long():
     tcap_address = web3.toChecksumAddress('0x717170B66654292dFBd89c39F5aE6753D2aC1381')
     contract = web3.eth.contract(address=tcap_address, abi=tcap_abi)
     nonce = web3.eth.getTransactionCount(str(ADDRESS))
+    #deposit ETH/AAVE/LINK into a vault
     
-
 
 if __name__ == "__main__":
     long()
